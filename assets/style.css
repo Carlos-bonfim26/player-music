@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+.music-player{
+    padding: 1.5rem;
+    width: 25rem;
+    background-color: #FCC98F;
+    text-align: center;
+    height: fit-content;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.8rem;
+}
+nav .circle{
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    background: #FCEBD6;
+    color: #682807;
+    box-shadow: 0 5px 10px rgba(61, 25, 8, 0.301);
+}
+.song-img{
+    width: 13.75rem;
+    border-radius: 50%;
+    border: 0.5rem solid #fff;
+    box-shadow: 0 5px 10px rgba(61, 25, 8, 0.301);
+}
+.music-player h1{
+    color: #301607;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+}
+.music-player p{
+    color: #682807;
+    font-size: 1rem;
+
+}
+#progress{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background-color: #FCEBD6;
+    border: 4px;
+    cursor: pointer;
+}
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: #C94D05;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    border: 8px solid #FCEBD6;
+    box-shadow: 0 5px 10px rgba(61, 25, 8, 0.301);
+}
+.controls{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.controls div{
+    width: 3.75rem;
+    height: 3.75rem;
+    margin: 1.2rem;
+    background-color: #FCEBD6;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #682807;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(61, 25, 8, 0.301);
+    font-size: 1.5rem;
+    text-align: center;
+}
+.controls div:nth-child(2){
+    transform: scale(1.5);
+    background-color: #682807;
+    color: #FCC98F;
+}
+@media (max-width:400px){
+.music-player{
+    width: 18rem;
+}
+
+.song-img{
+    width: 10rem;
+}
+#progress{
+    height: 4px;
+}
+#progress::-webkit-slider-thumb{
+    border: 5px solid #FCEBD6;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.controls div{
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+}
+}

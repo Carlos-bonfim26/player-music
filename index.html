@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Carlos Oliveira Bonfim">
+    <title>Música Play</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="music-player">
+        <nav>
+            <div class="circle">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="circle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        
+        </nav>
+        <img src="assets/jardimdasflores.jpg" alt="capa da música jardim das flores" class="song-img">
+        <h1>Jardim das Flores</h1>
+        <p>Jotapê</p>
+
+        <audio  id="song">
+            <source src="assets/WhatsApp Audio 2024-05-05 at 01.06.15.mpeg" type="audio/mpeg">
+        </audio>~
+
+        <input type="range" value="0" id="progress">
+
+        <div class="controls">
+            <div id="rewind">
+                <i  class="fa-solid fa-backward"></i>
+            </div>
+            <div onclick="playPause()">
+                <i class="fa-solid fa-play" id="crtlIcon"></i>
+            </div>
+            <div id="advance"> 
+                <i class="fa-solid fa-forward" ></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script src="assets/index.js"></script>
+</body>
+</html>
